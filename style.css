@@ -1,0 +1,152 @@
+.positionrela {
+  position: relative;
+}
+
+.positionrela .title {
+  position: absolute;
+  top: 50%;
+  width: 88%;
+  margin: 37px 0 3px;
+  text-align: left;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.positionrela .title h1 {
+  font-size: 46px;
+  line-height: 56px;
+  display: block;
+}
+
+.positionrela .title p {
+  font-size: 15px;
+  line-height: 20px;
+  padding: 12px 0 0;
+  font-weight: 400;
+  max-height: 80px;
+  display: block;
+}
+
+.positionrela .title p + p {
+  background-color: black;
+  color: white;
+  display: inline-block;
+  line-height: 18.5px;
+  padding: 10px 20px 6px 22px;
+}
+
+:root {
+  --swiper-theme-color: #404040;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 44px;
+  background-color: white;
+  border-radius: 50%;
+  background: #fafafa;
+  color: #404040;
+  opacity: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 15px;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  opacity: 1;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.active_opacity {
+  opacity: 0.8;
+}
+
+.swiper-button-next {
+  right: 0px;
+}
+
+.swiper-button-prev {
+  left: 0px;
+}
+
+.text h2 {
+  font-size: 20px;
+}
+
+.text p {
+  font-size: 15px;
+}
+
+p + p {
+  color: #0067b8;
+}
+
+.pic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px 0;
+  height: 100%;
+}
+
+.pic img {
+  width: 100%;
+}
+
+.nav-link {
+  color: #262626;
+  display: inline-block;
+  margin-top: 1px;
+  padding: 16px 8px 10px;
+  height: 48px;
+}
+
+.img_1 {
+  display: block;
+}
+
+.img_2 {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .pic_rwd {
+    width: 100%;
+    height: 765px;
+    background-color: #E6E6E6;
+  }
+  .pic_rwd .img_1 {
+    display: none;
+  }
+  .pic_rwd .img_2 {
+    display: block;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .pic_rwd .title {
+    width: auto;
+    top: unset;
+    bottom: 70px;
+    left: 50%;
+    text-align: center;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .pic_rwd .title h1 {
+    font-size: 20px;
+  }
+  .pic_rwd .title p {
+    font-size: 15px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

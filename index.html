@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+            font-size: 15px;
+            font-family: 'Segoe UI', SegoeUI, 'Microsoft JhengHei', 微軟正黑體, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            min-width: 320px;
+            color: #000;
+            background-color: white;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* .container {
+            background-color: white;
+        }
+ */
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-12">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Microsoft</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Office <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Windows</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Surface</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Xbox</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">支援</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="content">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="positionrela pic_banner" onmouseover="pic_hover()" onmouseout="pic_hover()">
+                                <!-- onmouseover="pic_hover()" -->
+                                <div class="pic pic_rwd">
+                                    <img src="./images/1-1.jpg" alt="" class="img_1">
+                                    <img src="./images/1-1_768.webp" alt="" class="img_2">
+                                    <div class="title">
+                                        <h1>全新的 Surface Pro 7</h1>
+                                        <p>纖變萬化</p>
+                                        <p>深入了解</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="positionrela">
+
+                                <div class="pic pic_rwd">
+                                    <img src="./images/1-2.webp" alt="" class="img_1">
+                                    <img src="./images/1-2_768.webp" alt="" class="img_2">
+                                    <div class="title">
+                                        <h1>全新的 Surface Laptop 3</h1>
+                                        <p>每天使用的完美筆記型電腦，速度比以往更快</p>
+                                        <p>立即預購</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-sm-6 col-12">
+            <div class="content">
+                <div class="pic">
+                    <img src="./images/2-1.webp" alt="">
+                </div>
+                <div class="text">
+                    <h2>全新的 Surface Pro X</h2>
+                    <p>對 Pro 的大膽、創新之舉，以有史以來最薄的變形平板帶來時尚的設計和極致的行動力。</p>
+                    <p>深入了解 </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-12">
+            <div class="content">
+                <div class="pic">
+                    <img src="./images/2-2.webp" alt="">
+                </div>
+                <div class="text">
+                    <h2>Surface Book 2</h2>
+                    <p>極致筆記型電腦的超強效能。</p>
+                    <p>立即選購 </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-12">
+            <div class="content">
+                <div class="pic">
+                    <img src="./images/2-3.webp" alt="">
+                </div>
+                <div class="text">
+                    <h2>這是您的 365</h2>
+                    <p>透過 Office 365 天天探索各種可能性。</p>
+                    <p>最多可供 6 人使用<br> 適合 1 人使用 </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-12">
+            <div class="content">
+                <div class="pic">
+                    <img src="./images/2-4.webp" alt="">
+                </div>
+                <div class="text">
+                    <h2>Xbox Game Pass Ultimate</h2>
+                    <p>Xbox Live Gold 和超過 100 款高品質的主機遊戲和電腦遊戲。 與好友同樂，並探索下一個最愛遊戲。</p>
+                    <p>立即選購</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="content">
+                <div class="positionrela">
+
+                    <div class="pic pic_rwd">
+                        <img src="./images/3-1.webp" alt="" class="img_1">
+                        <img src="./images/3-1_768.webp" alt="" class="img_2">
+
+                        <div class="title">
+                            <h1>Xbox One S</h1>
+                            <p>終極遊戲和 4K Ultra HD 娛樂系統。</p>
+                            <p>了解更多</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-sm-6 col-12">
+            <div class="content">
+                <div class="pic">
+                    <img src="./images/4-1.webp" alt="">
+                </div>
+                <div class="text">
+                    <h2>認識 Surface Pro 7 商務版</h2>
+                    <p>透過纖變萬化的經典變形平板，從筆記型電腦變成平板電腦或攜帶方便的工作室，以前所未有的方式一起合作。</p>
+                    <p>深入了解 </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-12">
+            <div class="content">
+                <div class="pic">
+                    <img src="./images/4-2.webp" alt="">
+                </div>
+                <div class="text">
+                    <h2>商務用 Office 365</h2>
+                    <p>不論您是連線或離線，都可隨處存取您的檔案。</p>
+                    <p>深入了解 </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-12">
+            <div class="content">
+                <div class="pic">
+                    <img src="./images/4-3.webp" alt="">
+                </div>
+                <div class="text">
+                    <h2>Windows 10 企業版</h2>
+                    <p>下載 IT 專業人員適用的 90 天免費評估版本。</p>
+                    <p>立即下載 </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-12">
+            <div class="content">
+                <div class="pic">
+                    <img src="./images/4-4.webp" alt="">
+                </div>
+                <div class="text">
+                    <h2>在 Azure 中試用 AI</h2>
+                    <p>透過您的 Azure 免費帳戶，使用 Azure 認知服務 (現在包括 12 個月 12 個免費服務) 來建置智慧應用程式。</p>
+                    <p>免費開始 </p>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+        </script>
+        <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+
+            var swiper_button_prev = document.querySelector('.swiper-button-prev');
+            var swiper_button_next = document.querySelector('.swiper-button-next');
+
+            function pic_hover() {
+                swiper_button_prev.classList.toggle("active_opacity");
+                swiper_button_next.classList.toggle("active_opacity");
+            }
+        </script>
+
+</body>
+
+</html>
